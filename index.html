@@ -15,11 +15,18 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="sticky">
+
+    <div class="return">
+      <a href="#home">
+        <ion-icon name="chevron-up-circle-outline"></ion-icon>
+      </a>
+    </div>
+    
     <main>
        <!-- Hero -->
-    <section
-      class="bg-image text-light"
+    <section id="home"
+      class="bg-image text-light hero-section"
       style="
         background-image: linear-gradient(
             to right top,
@@ -34,7 +41,7 @@
       "
     >
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark text-light">
+      <nav class="navbar navbar-expand-lg navbar-dark text-light header">
         <div class="container-fluid">
           <a href="#" class="navbar-brand logo">Jubilee Hotels</a>
 
@@ -50,19 +57,22 @@
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="nav-items navbar-nav ms-auto align-items-center">
               <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#service" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Rooms</a>
+                <a href="#room" class="nav-link">Rooms</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Customers</a>
+                <a href="#menu" class="nav-link">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="#" class= "nav-link"><button class="nav-btn">Contact
+                <a href="#reviews" class="nav-link">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class= "nav-link"><button class="nav-btn">Contact
                 </button></a>
                 
               </li>
@@ -83,7 +93,7 @@
       </div>
     </section>
 
-      <section class="description">
+      <section id="service" class="description">
         <div class="facilities">
           <h2 class="h1">Our Facilities</h2>
           <p>
@@ -173,7 +183,7 @@
 
       <!-- /////////////////////////Rooms -->
 
-      <section class="room-section">
+      <section id="room" class="room-section">
         <div class="container">
           <h2 class="h1 text-center mb-5"">Rooms</h2>
           <div class="rooms">
@@ -226,7 +236,7 @@
       </section>
 
       <!-- ////////menu section -->
-      <section class="menu-section">
+      <section id="menu" class="menu-section">
         <h2>Our Menu</h2>
         <h4>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, eum.
@@ -273,7 +283,7 @@
 
 <!-- slider & testimonial -->
 
-     <section class="reviews">
+     <section id="reviews" class="reviews">
       <h2 class="h1">Reviews</h2>
       <div class="slider">
         <div class="slide">
@@ -343,7 +353,7 @@
     </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="contact">
         <h3>Contact</h3>
         <div>
