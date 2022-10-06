@@ -17,6 +17,84 @@
   </head>
   <body class="sticky">
 
+    <div class="_modal hidden">
+      <form class="_modal__form" action="">
+        <div><ion-icon class="closeModal" name="close-outline"></ion-icon></div>
+        <h2>Booking Form</h2>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div>
+            <label for="Fname">First Name</label>
+            <input required placeholder="John" type="text">
+
+          </div>
+          <div>
+            <label for="Lname" >Last Name</label>
+            <input required placeholder="Doe" type="text">
+
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input required type="email">
+
+          </div>
+          <div>
+            <label for="tel">Phone No</label>
+            <input required type="tel">
+
+          </div>
+          <div>
+            <label for="tel">Address</label>
+            <input required type="text">
+
+          </div>
+          
+          </fieldset>
+
+          <fieldset class="booking-info">
+          <legend>Booking Info</legend>
+          <div>
+            <label for="Date-in">Check-in Date</label>
+            <input required type="date" >
+
+          </div>
+          <div>
+            <label for="time-in">Check-in Time</label>
+            <input required type="time">
+
+          </div>
+          <div>
+            <label for="Date-out">Check-out Date</label>
+            <input required type="date">
+
+          </div>
+          <div>
+            <label for="guests">Number of Guests</label>
+            <input required type="number" min="1" step="1" max="10">
+
+          </div>
+          <div>
+            <label for="room">Room Type</label>
+            <select required name="room" id="room">
+              <option value="">Select Room</option>
+              <option value="Single">Single</option>
+              <option value="Double">Double</option>
+              <option value="Kings">Kings</option>
+              <option value="Queens">Queens</option>
+            </select>
+
+          </div>
+          <div>
+            <label for="requets">Requests</label>
+            <textarea name="" id="" cols="30" rows="3">Enter text here</textarea>
+
+          </div>
+        </fieldset>
+
+        <input required class="btn btn-danger submit" type="submit">
+      </form>
+    </div>
+
     <div class="return">
       <a href="#home">
         <ion-icon name="chevron-up-circle-outline"></ion-icon>
@@ -63,7 +141,7 @@
                 <a href="#service" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#room" class="nav-link">Rooms</a>
+                <a href="#rooms" class="nav-link">Rooms</a>
               </li>
               <li class="nav-item">
                 <a href="#menu" class="nav-link">Menu</a>
@@ -88,7 +166,7 @@
           atque ea corporis dolorem rem reprehenderit vel
         </p>
         <div class="d-flex flex-column w-50 align-items-center mx-auto">
-          <button class="hero-btn btn btn-lg mt-3">Learn more</button>
+          <button class="hero-btn btn btn-lg mt-3">Book Now</button>
         </div>
       </div>
     </section>
@@ -183,7 +261,7 @@
 
       <!-- /////////////////////////Rooms -->
 
-      <section id="room" class="room-section">
+      <section id="rooms" class="room-section">
         <div class="container">
           <h2 class="h1 text-center mb-5"">Rooms</h2>
           <div class="rooms">
@@ -358,11 +436,11 @@
         <h3>Contact</h3>
         <div>
           
-          <p><span><ion-icon name="mail-outline"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
-          <p><span><ion-icon name="logo-twitter"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
-          <p><span><ion-icon name="location-outline"></ion-icon></span> Lorem, ipsum dolor sit amet consec adipisicing elit. Sed, ex.</p>
-          <p><span><ion-icon name="logo-facebook"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
-          <p><span><ion-icon name="call-outline"></ion-icon> </span> <a href="#" type="tel">+234 804 6092 222</a></p>
+          <p><span><ion-icon  class="contact__icon" name="mail-outline"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
+          <p><span><ion-icon class="contact__icon" name="logo-twitter"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
+          <p><span><ion-icon class="contact__icon" name="location-outline"></ion-icon></span> Lorem, ipsum dolor sit amet consec adipisicing elit. Sed, ex.</p>
+          <p><span><ion-icon class="contact__icon" name="logo-facebook"></ion-icon></span> <a href="#" type="mail">Loremipsum@example.com</a> </p>
+          <p><span><ion-icon class="contact__icon" name="call-outline"></ion-icon> </span> <a href="#" type="tel">+234 804 6092 222</a></p>
         </div>
       </div> 
     </footer>

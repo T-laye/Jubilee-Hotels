@@ -142,6 +142,21 @@ allLinks.forEach(function (link) {
 // );
 // obs.observe(sectionHeroEl);
 
+///////////////////////////////////
+/// Modal Window
+
+const bookBtn = document.querySelector(".hero-btn");
+const modal = document.querySelector("._modal");
+const closeModal = document.querySelector(".closeModal");
+
+bookBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
