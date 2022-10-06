@@ -22,10 +22,6 @@
 /*BELOW 980px (phones)*/
 /******************************/
 @media screen and (max-width: 62em) {
-  .hero-contents {
-    /* margin-top: 2rem; */
-  }
-
   .hero-contents h1 {
     font-size: 3.6rem;
   }
@@ -59,9 +55,6 @@
 /*BELOW 800px (phones)*/
 /******************************/
 @media screen and (max-width: 50em) {
-  .hero-contents {
-    /* margin-top: 10rem; */
-  }
   .food-container img {
     width: 20rem;
   }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Jubilee Hotel & Suites</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -123,7 +124,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark text-light header">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand logo">Jubilee Hotels</a>
+          <a href="#" class="navbar-brand logo" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000">Jubilee Hotels</a>
 
           <button
             class="navbar-toggler"
@@ -137,22 +138,22 @@
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="nav-items navbar-nav ms-auto align-items-center">
               <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
+                <a href="#home" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#service" class="nav-link">Services</a>
+                <a href="#service" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#rooms" class="nav-link">Rooms</a>
+                <a href="#rooms" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class="nav-link">Rooms</a>
               </li>
               <li class="nav-item">
-                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#menu" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class="nav-link">Menu</a>
               </li>
               <li class="nav-item">
-                <a href="#reviews" class="nav-link">Customers</a>
+                <a href="#reviews" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class="nav-link">Customers</a>
               </li>
               <li class="nav-item">
-                <a href="#contact" class= "nav-link"><button class="nav-btn">Contact
+                <a href="#contact" data-aos="flip-down" data-aos-delay="500"  data-aos-duration="1000" class= "nav-link"><button class="nav-btn">Contact
                 </button></a>
                 
               </li>
@@ -161,18 +162,18 @@
         </div>
       </nav>
 
-      <div class="container hero-contents text-center align-items-center">
+      <div data-aos="fade-in-zoom" data-aos-delay="1000"  data-aos-duration="1000" class="container hero-contents text-center align-items-center">
         <h1 class="hero-heading h1">YOUR BEST STOP FOR COMFORT <br> AND VITALITY</h1>
         <p class="lead hero-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
         </p>
         <div class="d-flex flex-column w-50 align-items-center mx-auto">
-          <button class="hero-btn btn btn-lg mt-3">Book Now</button>
+          <button data-aos="fade-down" data-aos-delay="500"  data-aos-duration="1000" class="hero-btn btn btn-lg mt-3">Book Now</button>
         </div>
       </div>
     </section>
 
-      <section id="service" class="description">
+      <section id="service" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="1000" class="description">
         <div class="facilities">
           <h2 class="h1">Our Facilities</h2>
           <p>
@@ -186,7 +187,8 @@
           </p>
         </div>
 
-        <div class="packages-container">
+        <div   data-aos-easing="ease-in-out"
+    data-aos-mirror="true" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="1000" class="packages-container">
           <div class="containers">
             <h2 class="h1 text-white text-center mb-5">Special Packages</h2>
             <!-- <h5>
@@ -194,7 +196,7 @@
               distinctio
             </h5> -->
 
-            <div class="package-items">
+            <div data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000" class="package-items">
               <div class="items">
                 <div class="icon-container">
                   <ion-icon name="restaurant-outline"></ion-icon>
@@ -205,7 +207,7 @@
                 </div>
               </div>
               <!-- ////////// -->
-              <div class="items">
+              <div data-aos="fade-up" data-aos-delay="1000"  data-aos-duration="1000" class="items">
                 <div class="icon-container">
                   <ion-icon name="wifi-outline"></ion-icon>
                 </div>
@@ -215,7 +217,7 @@
                 </div>
               </div>
               <!-- ////////// -->
-              <div class="items">
+              <div data-aos="fade-right" data-aos-delay="1000"  data-aos-duration="1000" class="items">
                 <div class="icon-container">
                   <ion-icon name="man-outline"></ion-icon>
                 </div>
@@ -225,7 +227,7 @@
                 </div>
               </div>
               <!-- ////////// -->
-              <div class="items">
+              <div data-aos="fade-left" data-aos-delay="1000"  data-aos-duration="1000" class="items">
                 <div class="icon-container">
                   <ion-icon name="bed-outline"></ion-icon>
                 </div>
@@ -235,7 +237,7 @@
                 </div>
               </div>
               <!-- ////////// -->
-              <div class="items">
+              <div data-aos="fade-right" data-aos-delay="1000"  data-aos-duration="1000" class="items">
                 <div class="icon-container">
                   <ion-icon name="restaurant-outline"></ion-icon>
                 </div>
@@ -245,7 +247,7 @@
                 </div>
               </div>
               <!-- ////////// -->
-              <div class="items">
+              <div data-aos="fade-down" data-aos-delay="1000"  data-aos-duration="1000" class="items">
                 <div class="icon-container">
                   <ion-icon name="wine-outline"></ion-icon>
                 </div>
@@ -262,11 +264,14 @@
 
       <!-- /////////////////////////Rooms -->
 
-      <section id="rooms" class="room-section">
+      <section data-aos-easing="ease-in-out"
+    data-aos-mirror="true" data-aos="fade-up" data-aos-delay="500"  data-aos-duration="1000" id="rooms" class="room-section">
         <div class="container">
           <h2 class="h1 text-center mb-5"">Rooms</h2>
           <div class="rooms">
-            <div class="room room--1">
+            <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="room room--1">
               <div class="room__contents">
                 <h3>Room 1</h3>
                 <div>
@@ -277,7 +282,9 @@
                 </div>
               </div>
             </div>
-            <div class="room room--2">
+            <div data-aos="fade-left"
+     data-aos-offset="300" data-aos-delay="7git 00"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" class="room room--2">
               <div class="room__contents">
                 <h3>Room 2</h3>
                 <div>
@@ -288,7 +295,9 @@
                 </div>
               </div>
             </div>
-            <div class="room room--3">
+            <div data-aos="fade-right"
+     data-aos-offset="300" data-aos-delay="700"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" class="room room--3">
               <div class="room__contents">
                 <h3>Room 3</h3>
                 <div>
@@ -299,7 +308,9 @@
                 </div>
               </div>
             </div>
-            <div class="room room--4">
+            <div data-aos="fade-left"
+     data-aos-offset="300" data-aos-delay="700"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" class="room room--4">
              <div class="room__contents">
                 <h3>Room 4</h3>
                 <div>
@@ -315,7 +326,9 @@
       </section>
 
       <!-- ////////menu section -->
-      <section id="menu" class="menu-section">
+      <section data-aos="fade-up"
+     data-aos-offset="300" data-aos-delay="500"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" id="menu" class="menu-section">
         <h2>Our Menu</h2>
         <h4>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, eum.
@@ -324,7 +337,9 @@
         <div class="menu-container">
           <div class="menu">
 
-            <div class="food-list">
+            <div data-aos="fade-right"
+     data-aos-offset="300" data-aos-delay="1000"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" class="food-list">
               <ul>
                 <li>
                   <img src="./img/burger.png" alt="burger" />
@@ -342,7 +357,9 @@
               </ul>
             </div>
   
-             <div class="food-container"> 
+             <div data-aos="flip-left"
+     data-aos-offset="300" data-aos-delay="1000"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" class="food-container"> 
               <!-- <img
                 src="./img/thomas-tucker-MNtag_eXMKw-unsplash.jpg"
                 alt="egusi"
@@ -362,7 +379,9 @@
 
 <!-- slider & testimonial -->
 
-     <section id="reviews" class="reviews">
+     <section data-aos="fade-up"
+     data-aos-offset="300" data-aos-delay="1000"  data-aos-duration="1000"
+     data-aos-easing="ease-in-sine" id="reviews" class="reviews">
       <h2 class="h1">Reviews</h2>
       <div class="slider">
         <div class="slide">
@@ -436,6 +455,7 @@
       </div> 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -446,5 +466,8 @@
     ></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

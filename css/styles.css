@@ -321,16 +321,6 @@ h4 {
 .food-list img {
   height: 2rem;
 }
-
-.food-container {
-  /* height: 20rem; */
-  /* background-color: #8a6802; */
-  /* width: 10rem; */
-  /* display: flex;
-  flex-direction: column;
-  gap: 2rem; */
-  /* background-color: white; */
-}
 .food-container img {
   /* height: 100%; */
   width: 30rem;
