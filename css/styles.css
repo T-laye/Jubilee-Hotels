@@ -35,11 +35,12 @@ nav {
 .nav-item a:visited {
   color: #fff;
   font-size: 1.8rem;
-  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.5s ease-in-out;
 }
 .nav-item a:hover,
 .nav-item a:active {
-  color: #8a6802;
+  transform: translateY(-2px);
+  border-bottom: 1px solid #fff;
 }
 
 .nav-btn {
@@ -59,10 +60,10 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  width: 100rem;
-  margin: 15rem auto;
+  width: 100%;
+  margin: 15% auto;
   color: #fff;
-  text-shadow: 0 7px 3px rgba(0, 0, 0, 0.6);
+  /* text-shadow: 0 7px 3px rgba(0, 0, 0, 0.6); */
   overflow: hidden;
 }
 
@@ -83,11 +84,13 @@ nav {
   border: 2px solid #fff;
   color: #fff;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero-btn:hover,
 .nav-btn:hover {
-  background-color: #8a6802;
+  background-color: #fff;
+  color: #080807;
   box-shadow: none;
   border: none;
 }
@@ -100,9 +103,10 @@ nav {
   color: #1c1500;
 }
 .facilities {
-  /* height: 100vh; */
+  min-height: 50vh;
+  height: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   max-width: 95rem;
   margin: 4rem auto 8rem;
@@ -110,24 +114,27 @@ nav {
 .facilities h2 {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 5rem;
   border-bottom: 2px solid #8a6802;
   font-weight: 600;
 }
 .facilities p {
   line-height: 2.5rem;
-  /* padding: 0rem 2rem; */
+  padding: 0rem 4rem;
   text-align: justify;
 }
 .packages-container {
+  height: auto;
   background-image: linear-gradient(
       to bottom,
-      rgba(19, 10, 2, 0.473),
-      rgba(20, 18, 15, 0.493)
+      rgba(19, 10, 2, 0.788),
+      rgba(20, 18, 15, 0.822)
     ),
     url(../img/alexander-kaunas-67-sOi7mVIk-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 5px;
 }
 .containers {
   max-width: 120rem;
@@ -137,10 +144,13 @@ nav {
 }
 .package-items {
   /* background-color: blueviolet; */
-  margin-top: 1rem;
+  margin-top: 5.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  -moz-column-gap: 3rem;
+  column-gap: 5rem;
+  padding: 0 5rem;
 }
 .containers h1 {
   text-align: center;
@@ -165,6 +175,8 @@ nav {
   background-color: #e8e1cc;
   padding: 2rem;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .icon-container ion-icon {
   color: #8a6802;
@@ -174,11 +186,10 @@ nav {
 /* Room Section */
 
 .room-section {
-  height: 90rem;
+  height: auto;
   overflow: hidden;
   max-width: 110rem;
-  margin: 0 auto;
-  margin-top: 8rem;
+  margin: 8rem auto;
 }
 .room-section h2 {
   text-align: center;
@@ -269,26 +280,34 @@ h4 {
 }
 .menu-container {
   margin-top: 4rem;
-  height: 50rem;
+  min-height: 80vh;
+  height: auto;
   background-image: linear-gradient(
       to right,
-      rgba(12, 11, 9, 0.541),
-      rgb(5, 5, 5)
+      rgba(12, 11, 9, 0.877),
+      rgb(5, 5, 5, 0.5)
     ),
     url(../img/femoree-kn_ANxnwCQ0-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   margin: 0 auto;
   display: flex;
-  gap: 25rem;
-  padding-left: 20rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 5rem;
+  /* background-color: purple; */
+  width: 100%;
+}
+
+.food-list {
+  width: 50%;
 }
 
 .food-list ul {
@@ -296,25 +315,27 @@ h4 {
   color: #e8e1cc;
   font-size: 2rem;
   line-height: 4rem;
+  /* background-color: #8a6802; */
+  /* width: 50%; */
 }
 .food-list img {
   height: 2rem;
 }
 
 .food-container {
-  height: 20rem;
+  /* height: 20rem; */
   /* background-color: #8a6802; */
   /* width: 10rem; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  gap: 2rem; */
+  /* background-color: white; */
 }
 .food-container img {
   /* height: 100%; */
-  width: 20rem;
+  width: 30rem;
 }
 
-.food-container img:nth-child(3),
 .food-container img:nth-child(1) {
   transform: rotate(90deg);
 }
@@ -330,7 +351,8 @@ h4 {
 /* SLIDER */
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  min-height: 50rem;
+  height: auto;
   margin: 0 auto;
   position: relative;
   margin-top: -4rem;
@@ -515,6 +537,7 @@ footer {
 }
 
 .contact div p {
+  /* background-color: #888; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,18 +621,17 @@ footer div span {
   left: 0;
   right: 0;
   overflow-y: scroll;
+  height: auto;
 }
 
 ._modal__form {
-  /* height: 80vh; */
   width: 50%;
   padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  /* justify-content: space-between; */
   background-color: white;
   position: relative;
+  margin-top: 40%;
 }
 
 ._modal__form h2 {
