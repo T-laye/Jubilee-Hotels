@@ -50,10 +50,6 @@
     flex-direction: column;
   }
 
-  fieldset {
-    grid-template-columns: 1fr;
-  }
-
   ._modal__form {
     margin-top: 80%;
   }
@@ -150,6 +146,9 @@
 /*BELOW 400px (phones)*/
 /******************************/
 @media screen and (max-width: 25em) {
+  fieldset {
+    grid-template-columns: 1fr;
+  }
   .item-text {
     margin-top: 5px;
     padding: 0 3rem 2rem;
