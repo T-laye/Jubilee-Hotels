@@ -5,9 +5,9 @@
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 body {
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   background-color: #e8e1cc;
 }
@@ -22,6 +22,7 @@ nav {
   font-size: 1.8rem;
   font-family: serif;
   font-weight: 400;
+  margin-left: 1rem;
 }
 
 .nav-items {
@@ -33,7 +34,13 @@ nav {
 .nav-item a:link,
 .nav-item a:visited {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item a:hover,
+.nav-item a:active {
+  transform: translateY(-2px);
+  border-bottom: 1px solid #fff;
 }
 
 .nav-btn {
@@ -41,9 +48,11 @@ nav {
   padding: 1rem 2.5rem;
   background: none;
   font-size: 1.6rem;
-  border: 1px solid #fff;
+  border: none;
+  box-shadow: 0 0 0 2px #fff;
   color: #fff;
   border-radius: 5px;
+  transition: all 0.5s;
 }
 
 .hero-contents {
@@ -51,11 +60,11 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  width: 100rem;
-  margin: 15rem auto;
+  width: 100%;
+  margin: 15% auto;
   color: #fff;
-  cursor: pointer;
-  text-shadow: 0 7px 3px rgba(0, 0, 0, 0.6);
+  /* text-shadow: 0 7px 3px rgba(0, 0, 0, 0.6); */
+  overflow: hidden;
 }
 
 .hero-contents h1 {
@@ -72,9 +81,18 @@ nav {
   padding: 1rem 2.5rem;
   background: none;
   font-size: 1.8rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-btn:hover,
+.nav-btn:hover {
+  background-color: #fff;
+  color: #080807;
+  box-shadow: none;
+  border: none;
 }
 
 /* ##################################### */
@@ -85,8 +103,10 @@ nav {
   color: #1c1500;
 }
 .facilities {
+  min-height: 50vh;
+  height: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   max-width: 95rem;
   margin: 4rem auto 8rem;
@@ -94,24 +114,27 @@ nav {
 .facilities h2 {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 5rem;
   border-bottom: 2px solid #8a6802;
   font-weight: 600;
 }
 .facilities p {
   line-height: 2.5rem;
-  /* padding: 0rem 2rem; */
+  padding: 0rem 4rem;
   text-align: justify;
 }
 .packages-container {
+  height: auto;
   background-image: linear-gradient(
       to bottom,
-      rgba(19, 10, 2, 0.473),
-      rgba(20, 18, 15, 0.493)
+      rgba(19, 10, 2, 0.788),
+      rgba(20, 18, 15, 0.822)
     ),
     url(../img/alexander-kaunas-67-sOi7mVIk-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 5px;
 }
 .containers {
   max-width: 120rem;
@@ -121,10 +144,13 @@ nav {
 }
 .package-items {
   /* background-color: blueviolet; */
-  margin-top: 1rem;
+  margin-top: 5.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  -moz-column-gap: 3rem;
+  column-gap: 5rem;
+  padding: 0 5rem;
 }
 .containers h1 {
   text-align: center;
@@ -149,6 +175,8 @@ nav {
   background-color: #e8e1cc;
   padding: 2rem;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .icon-container ion-icon {
   color: #8a6802;
@@ -158,11 +186,10 @@ nav {
 /* Room Section */
 
 .room-section {
-  height: 90rem;
+  height: auto;
   overflow: hidden;
   max-width: 110rem;
-  margin: 0 auto;
-  margin-top: 8rem;
+  margin: 8rem auto;
 }
 .room-section h2 {
   text-align: center;
@@ -253,26 +280,34 @@ h4 {
 }
 .menu-container {
   margin-top: 4rem;
-  height: 50rem;
+  min-height: 80vh;
+  height: auto;
   background-image: linear-gradient(
       to right,
-      rgba(12, 11, 9, 0.541),
-      rgb(5, 5, 5)
+      rgba(12, 11, 9, 0.877),
+      rgb(5, 5, 5, 0.5)
     ),
     url(../img/femoree-kn_ANxnwCQ0-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .menu {
   margin: 0 auto;
   display: flex;
-  gap: 25rem;
-  padding-left: 20rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 5rem;
+  /* background-color: purple; */
+  width: 100%;
+}
+
+.food-list {
+  width: 50%;
 }
 
 .food-list ul {
@@ -280,25 +315,17 @@ h4 {
   color: #e8e1cc;
   font-size: 2rem;
   line-height: 4rem;
+  /* background-color: #8a6802; */
+  /* width: 50%; */
 }
 .food-list img {
   height: 2rem;
 }
-
-.food-container {
-  height: 20rem;
-  /* background-color: #8a6802; */
-  /* width: 10rem; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
 .food-container img {
   /* height: 100%; */
-  width: 20rem;
+  width: 30rem;
 }
 
-.food-container img:nth-child(3),
 .food-container img:nth-child(1) {
   transform: rotate(90deg);
 }
@@ -314,7 +341,8 @@ h4 {
 /* SLIDER */
 .slider {
   max-width: 100rem;
-  height: 50rem;
+  min-height: 50rem;
+  height: auto;
   margin: 0 auto;
   position: relative;
   margin-top: -4rem;
@@ -499,6 +527,7 @@ footer {
 }
 
 .contact div p {
+  /* background-color: #888; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -521,4 +550,158 @@ footer div span {
   display: inline-block;
   font-size: 2.4rem;
   color: white;
+}
+
+#contact p:hover .contact__icon {
+  transform: scale(1.5);
+}
+
+/* ***Sticky Navigationn***/
+/* .sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(22, 22, 22, 0.699);
+  z-index: 999;
+}
+
+.sticker .hero-section {
+  margin-top: 9.6rem;
+} */
+
+.return {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.return a {
+  text-decoration: none;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+}
+
+.return ion-icon {
+  font-size: 4.8rem;
+  color: white;
+}
+
+/* Booking modal */
+._modal {
+  background-color: #0808079d;
+  position: fixed;
+  /* height: auto; */
+  /* width: 100%; */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  height: auto;
+}
+
+._modal__form {
+  width: 90%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  margin-top: 40%;
+}
+
+._modal__form h2 {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 5rem;
+  column-gap: 5rem;
+}
+
+fieldset > div:nth-child(2) {
+  grid-column: 1;
+}
+
+legend {
+  font-weight: 600;
+}
+
+/* .booking-info > div:last-child {
+  grid-column: 1;
+} */
+.booking-info {
+  margin-top: 2rem;
+}
+
+._modal__form div {
+  display: flex;
+  flex-direction: column;
+}
+
+._modal__form label {
+  color: red;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+._modal__form select,
+._modal__form textarea,
+._modal__form input {
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0px 0px 1px rgba(12, 11, 9, 0.233);
+  padding: 5px 1rem;
+  transition: all 0.5s;
+  resize: none;
+}
+
+._modal__form select:focus,
+._modal__form textarea:focus,
+._modal__form input:focus {
+  box-shadow: 0px 1px 2px 2px rgba(12, 11, 9, 0.233);
+  outline: none;
+  border: none;
+}
+
+._modal__form .submit {
+  /* color: #080807; */
+  font-weight: 600;
+  width: 20%;
+  align-self: center;
+}
+
+._modal div ion-icon {
+  color: #080807;
+  font-size: 4.2rem;
+  position: absolute;
+  /* z-index: 100; */
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

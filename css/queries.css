@@ -1,0 +1,176 @@
+/* ***************************
+*   BELOW 1080px
+******************************/
+@media screen and (max-width: 68rem) {
+  .contact {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact div p {
+    width: auto;
+  }
+}
+
+/* ****************************/
+/*BELOW 980px (phones)*/
+/******************************/
+@media screen and (max-width: 62em) {
+  .hero-contents h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .package-items {
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 12rem;
+  }
+
+  .items {
+    width: 90%;
+  }
+  .rooms {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ._modal__form {
+    margin-top: 80%;
+  }
+}
+
+/* ****************************/
+/*BELOW 800px (phones)*/
+/******************************/
+@media screen and (max-width: 50em) {
+  .food-container img {
+    width: 20rem;
+  }
+  ._modal__form {
+    margin-top: 60%;
+  }
+
+  ._modal__form .submit {
+    width: 30%;
+  }
+}
+
+/* ****************************/
+/*BELOW 700px (phones)*/
+/******************************/
+@media screen and (max-width: 47em) {
+  ._modal__form {
+    margin-top: 85%;
+  }
+
+  .package-items {
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .items {
+    width: 100%;
+  }
+}
+
+/* ****************************/
+/*BELOW 600px (phones)*/
+/******************************/
+@media screen and (max-width: 38em) {
+  .contact div {
+    grid-template-columns: 1fr 1fr;
+  }
+  ._modal__form {
+    margin-top: 90%;
+  }
+
+  .hero-contents h1 {
+    font-size: 2.4rem;
+  }
+
+  ._modal__form select,
+  ._modal__form textarea,
+  ._modal__form input,
+  ._modal__form .submit {
+    width: 100%;
+  }
+}
+
+/* ****************************/
+/*BELOW 550px (phones)*/
+/******************************/
+@media screen and (max-width: 34em) {
+  .menu {
+    flex-direction: column;
+    padding: 1rem 5px;
+    padding-top: 5rem;
+  }
+
+  .food-list {
+    width: 70%;
+  }
+
+  .contact div {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  ._modal__form {
+    margin-top: 110%;
+    padding: 0 1rem;
+  }
+}
+
+/* ****************************/
+/*BELOW 400px (phones)*/
+/******************************/
+@media screen and (max-width: 25em) {
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+  .item-text {
+    margin-top: 5px;
+    padding: 0 3rem 2rem;
+  }
+
+  .item-text h3 {
+    text-align: center;
+    font-size: larger;
+  }
+  .package-items {
+    padding: 0 1rem;
+  }
+  .items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .food-list {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .rooms {
+    padding: 0 1rem;
+  }
+
+  ._modal__form {
+    margin-top: 150%;
+  }
+}
