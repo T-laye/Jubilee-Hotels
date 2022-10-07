@@ -1,0 +1,30 @@
+{
+  "name": "jubilee-hotels-main",
+  "version": "1.0.0",
+  "description": "Jubilee hotels landing page",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-laye/Jubilee-Hotels.git"
+  },
+  "author": "Laye and Jane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-laye/Jubilee-Hotels/issues"
+  },
+  "homepage": "https://github.com/T-laye/Jubilee-Hotels#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.17"
+  },
+  "dependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "csswring": "^7.0.0",
+    "parcel": "^2.7.0"
+  }
+}
